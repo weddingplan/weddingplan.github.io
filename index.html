@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <title>FieldSketch Farm</title>
-      <link rel="stylesheet" type="text/css" href="./FieldSketch Farm_files/bulma.css">
-    <link rel="stylesheet" type="text/css" href="./FieldSketch Farm_files/app.css">
+      <link rel="stylesheet" href="./FieldSketch Farm_files/bulma.css">
+    <link rel="stylesheet" href="./FieldSketch Farm_files/app.css">
   </head>
 
   <body>
@@ -41,15 +41,25 @@
 	<div class="panel-container">
 		<div class="panel-container-body">
 			<div class="panels questions">
-				<div class="question" id="panel_1" data-panel="one" style="display: flex;" display="fiex">
+				<div class="question" id="panel_1" data-panel="one" style="display:flex;">
 					First, pick your palette:
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+					<div class="level">
+						<div class="level-item swatch">Swatch 4</div>
+						<div class="level-item swatch">Swatch 5</div>
+						<div class="level-item swatch">Swatch 6</div>
+					</div>
 					<button>Next</button>
 				</div>
-				<div class="question" id="panel_2" data-panel="two" style="display: none;" display="flex">
+				<div class="question" id="panel_2" data-panel="two" style="display:none;">
 					Next, Select your style
 					<button>Next</button>
 				</div>
-				<div class="question" id="panel_3" data-panel="three" style="display: none;" display="flex">
+				<div class="question" id="panel_3" data-panel="three" style="display:none;">
 					Thank You! <br><br>
 
 					Now its time to crunch some numbers to see where you want to splurge and where you want to save. Go ahead and adjust the numbers and options below, until you find a combination you’re happy with.
@@ -75,7 +85,15 @@
 		</div>
 	</div>
 </div>
-    </div>
+
+
+<div id="modal" class="modal">
+  <div id="modal-background" class="modal-background"></div>
+  <div class="modal-content">
+    <div id="modal-container" class="box modal-container">Swatch 6</div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>    </div>
     <script src="./FieldSketch Farm_files/app.js"></script>
   <iframe src="./FieldSketch Farm_files/frame.html" style="display: none;"></iframe>
 

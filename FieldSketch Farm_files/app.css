@@ -10,8 +10,12 @@ div.questions {
   justify-content: center; }
 
 div.question {
-  display: flex;
   justify-content: center; }
+
+div.modal-container {
+  color: #333;
+  justify-content: center;
+  text-align: center; }
 
 div.container {
   justify-content: center; }

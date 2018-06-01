@@ -12275,6 +12275,16 @@ var maxStage = 1;
 	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'flex');
 });
 
+(0, _jquery2.default)('div.swatch').click(function () {
+	var data = (0, _jquery2.default)(this).html();
+	(0, _jquery2.default)("#modal-container").html(data);
+	(0, _jquery2.default)("#modal").addClass('is-active');
+});
+
+(0, _jquery2.default)('#modal-background').click(function () {
+	(0, _jquery2.default)("#modal").removeClass('is-active');
+});
+
 });
 
 require.register("js/socket.js", function(exports, require, module) {
