@@ -91,6 +91,24 @@ input[type="radio"] {
   display: inline-block;
   font-size: 16px; }
 
+@media (max-width: 500px) {
+  .stages label {
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px; }
+  .stages label:after {
+    font-size: 12px; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .stages label {
+    border-width: 4px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px; }
+  .stages label:after {
+    font-size: 14px; } }
+
 #radio_1:checked ~ .stages label[for="radio_1"] {
   border-color: #0cc39f; }
 
@@ -169,74 +187,266 @@ input[type="radio"] {
 #radio_1:checked ~ .stages label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_1:checked ~ .stages label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_1:checked ~ .stages label {
+    font-size: 0.9rem; } }
+
 #radio_2:checked ~ .stages label[for="radio_1"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_2:checked ~ .stages label[for="radio_1"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_2:checked ~ .stages label[for="radio_1"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_3:checked ~ .stages label[for="radio_2"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_3:checked ~ .stages label[for="radio_2"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_3:checked ~ .stages label[for="radio_2"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_4:checked ~ .stages label[for="radio_3"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_4:checked ~ .stages label[for="radio_3"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_4:checked ~ .stages label[for="radio_3"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_5:checked ~ .stages label[for="radio_4"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_5:checked ~ .stages label[for="radio_4"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_5:checked ~ .stages label[for="radio_4"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_6:checked ~ .stages label[for="radio_5"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_6:checked ~ .stages label[for="radio_5"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_6:checked ~ .stages label[for="radio_5"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_7:checked ~ .stages label[for="radio_6"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_7:checked ~ .stages label[for="radio_6"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_7:checked ~ .stages label[for="radio_6"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_8:checked ~ .stages label[for="radio_7"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_8:checked ~ .stages label[for="radio_7"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_8:checked ~ .stages label[for="radio_7"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_9:checked ~ .stages label[for="radio_8"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_9:checked ~ .stages label[for="radio_8"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_9:checked ~ .stages label[for="radio_8"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_10:checked ~ .stages label[for="radio_9"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_10:checked ~ .stages label[for="radio_9"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_10:checked ~ .stages label[for="radio_9"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_11:checked ~ .stages label[for="radio_10"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_11:checked ~ .stages label[for="radio_10"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_11:checked ~ .stages label[for="radio_10"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_12:checked ~ .stages label[for="radio_11"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_12:checked ~ .stages label[for="radio_11"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_12:checked ~ .stages label[for="radio_11"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_13:checked ~ .stages label[for="radio_12"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_13:checked ~ .stages label[for="radio_12"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_13:checked ~ .stages label[for="radio_12"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_14:checked ~ .stages label[for="radio_13"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_14:checked ~ .stages label[for="radio_13"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_14:checked ~ .stages label[for="radio_13"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_15:checked ~ .stages label[for="radio_14"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_15:checked ~ .stages label[for="radio_14"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_15:checked ~ .stages label[for="radio_14"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_16:checked ~ .stages label[for="radio_15"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_16:checked ~ .stages label[for="radio_15"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_16:checked ~ .stages label[for="radio_15"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_17:checked ~ .stages label[for="radio_16"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_17:checked ~ .stages label[for="radio_16"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_17:checked ~ .stages label[for="radio_16"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_18:checked ~ .stages label[for="radio_17"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_18:checked ~ .stages label[for="radio_17"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_18:checked ~ .stages label[for="radio_17"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_19:checked ~ .stages label[for="radio_18"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_19:checked ~ .stages label[for="radio_18"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_19:checked ~ .stages label[for="radio_18"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_20:checked ~ .stages label[for="radio_19"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_20:checked ~ .stages label[for="radio_19"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_20:checked ~ .stages label[for="radio_19"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_21:checked ~ .stages label[for="radio_20"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_21:checked ~ .stages label[for="radio_20"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_21:checked ~ .stages label[for="radio_20"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_22:checked ~ .stages label[for="radio_21"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_22:checked ~ .stages label[for="radio_21"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_22:checked ~ .stages label[for="radio_21"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_23:checked ~ .stages label[for="radio_22"] ~ label {
   font-size: 1rem; }
 
+@media (max-width: 500px) {
+  #radio_23:checked ~ .stages label[for="radio_22"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_23:checked ~ .stages label[for="radio_22"] ~ label {
+    font-size: 0.9rem; } }
+
 #radio_24:checked ~ .stages label[for="radio_23"] ~ label {
   font-size: 1rem; }
+
+@media (max-width: 500px) {
+  #radio_24:checked ~ .stages label[for="radio_23"] ~ label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #radio_24:checked ~ .stages label[for="radio_23"] ~ label {
+    font-size: 0.9rem; } }
 
 #radio_1:checked ~ .stages label:after {
   display: none; }
