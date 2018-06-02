@@ -12267,9 +12267,6 @@ var maxStage = 1;
 	}
 	(0, _jquery2.default)('.form input[type="radio"]').prop('checked', false);
 	(0, _jquery2.default)('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
-	if (stage == 6) {
-		(0, _jquery2.default)('button').html('Submit');
-	}
 	(0, _jquery2.default)('div.question').hide();
 	(0, _jquery2.default)('div#panel_' + stage).show();
 	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'flex');

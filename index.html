@@ -22,26 +22,62 @@
 </div>
 
 <div class="form ">
-	<input id="one" type="radio" name="stage" checked="checked">
-	<input id="two" type="radio" name="stage">
-	<input id="three" type="radio" name="stage">
-	<input id="four" type="radio" name="stage">
-	<input id="five" type="radio" name="stage">
-	<input id="six" type="radio" name="stage">
+	<input id="radio_1" type="radio" name="stage" checked="checked">
+		<input id="radio_2" type="radio" name="stage">
+		<input id="radio_3" type="radio" name="stage">
+		<input id="radio_4" type="radio" name="stage">
+		<input id="radio_5" type="radio" name="stage">
+		<input id="radio_6" type="radio" name="stage">
+		<input id="radio_7" type="radio" name="stage">
+		<input id="radio_8" type="radio" name="stage">
+		<input id="radio_9" type="radio" name="stage">
+		<input id="radio_10" type="radio" name="stage">
+		<input id="radio_11" type="radio" name="stage">
+		<input id="radio_12" type="radio" name="stage">
+		<input id="radio_13" type="radio" name="stage">
+		<input id="radio_14" type="radio" name="stage">
+		<input id="radio_15" type="radio" name="stage">
+		<input id="radio_16" type="radio" name="stage">
+		<input id="radio_17" type="radio" name="stage">
+		<input id="radio_18" type="radio" name="stage">
+		<input id="radio_19" type="radio" name="stage">
+		<input id="radio_20" type="radio" name="stage">
+		<input id="radio_21" type="radio" name="stage">
+		<input id="radio_22" type="radio" name="stage">
+		<input id="radio_23" type="radio" name="stage">
+		<input id="radio_24" type="radio" name="stage">
 	<div class="stages">
-		<label id="stage_1" data-stage="1" for="one">1</label>
-		<label id="stage_2" data-stage="2" for="two">2</label>
-		<label id="stage_3" data-stage="3" for="three">3</label>
-		<label id="stage_4" data-stage="4" for="four">4</label>
-		<label id="stage_5" data-stage="5" for="five">5</label>
-		<label id="stage_6" data-stage="6" for="six">6</label>
+		<label id="stage_1" data-stage="1" for="radio_1">1</label>
+			<label id="stage_2" data-stage="2" for="radio_2">2</label>
+			<label id="stage_3" data-stage="3" for="radio_3">3</label>
+			<label id="stage_4" data-stage="4" for="radio_4">4</label>
+			<label id="stage_5" data-stage="5" for="radio_5">5</label>
+			<label id="stage_6" data-stage="6" for="radio_6">6</label>
+			<label id="stage_7" data-stage="7" for="radio_7">7</label>
+			<label id="stage_8" data-stage="8" for="radio_8">8</label>
+			<label id="stage_9" data-stage="9" for="radio_9">9</label>
+			<label id="stage_10" data-stage="10" for="radio_10">10</label>
+			<label id="stage_11" data-stage="11" for="radio_11">11</label>
+			<label id="stage_12" data-stage="12" for="radio_12">12</label>
+			<label id="stage_13" data-stage="13" for="radio_13">13</label>
+			<label id="stage_14" data-stage="14" for="radio_14">14</label>
+			<label id="stage_15" data-stage="15" for="radio_15">15</label>
+			<label id="stage_16" data-stage="16" for="radio_16">16</label>
+			<label id="stage_17" data-stage="17" for="radio_17">17</label>
+			<label id="stage_18" data-stage="18" for="radio_18">18</label>
+			<label id="stage_19" data-stage="19" for="radio_19">19</label>
+			<label id="stage_20" data-stage="20" for="radio_20">20</label>
+			<label id="stage_21" data-stage="21" for="radio_21">21</label>
+			<label id="stage_22" data-stage="22" for="radio_22">22</label>
+			<label id="stage_23" data-stage="23" for="radio_23">23</label>
+			<label id="stage_24" data-stage="24" for="radio_24">24</label>
 	</div>
 
 	<span class="progress"><span></span></span>
 	<div class="panel-container">
 		<div class="panel-container-body">
 			<div class="panels questions">
-				<div class="question" id="panel_1" data-panel="one" style="display:flex;">
+				<div class="question" id="panel_1" data-panel="question_1" style="display:flex;">
 					First, pick your palette:
 					<div class="level">
 						<div class="level-item swatch">Swatch 1</div>
@@ -53,13 +89,20 @@
 						<div class="level-item swatch">Swatch 5</div>
 						<div class="level-item swatch">Swatch 6</div>
 					</div>
-					<button>Next</button>
+					<button class="button-next">Next</button>
 				</div>
-				<div class="question" id="panel_2" data-panel="two" style="display:none;">
+				<div class="question" id="panel_2" data-panel="question_2" style="display:none;">
 					Next, Select your style
-					<button>Next</button>
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
 				</div>
-				<div class="question" id="panel_3" data-panel="three" style="display:none;">
+				<div class="question" id="panel_3" data-panel="question_3" style="display:none;">
 					Thank You! <br><br>
 
 					Now its time to crunch some numbers to see where you want to splurge and where you want to save. Go ahead and adjust the numbers and options below, until you find a combination you’re happy with.
@@ -67,20 +110,358 @@
  					How many Bridal bouquets do you need?
  					<br>
 					<input type="text" placeholder="Number of Bouquets">
-					<button>Next</button>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
 				</div>
-				<div class="question" id="panel_4" data-panel="four" style="display:none;">
-					<input type="text" placeholder="Email">
-					<button>Next</button>
+
+				<div class="question" id="panel_4" data-panel="question_4" style="display:none;">
+					What size would you like your bridal bouquets to be?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+						<div class="level-item swatch">Swatch 4</div>
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
 				</div>
-				<div class="question" id="panel_5" data-panel="five" style="display:none;">
-					<input type="text" placeholder="Phone Number">
-					<button>Next</button>
+
+				<div class="question" id="panel_5" data-panel="question_5" style="display:none;">
+ 					How many bridesmaid bouquets do you need?
+ 					<br>
+					<input type="text" placeholder="Number of Bouquets">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
 				</div>
-				<div class="question" id="panel_6" data-panel="six" style="display:none;">
-					<input type="text" placeholder="Comment">
-					<button>Next</button>
+
+				<div class="question" id="panel_6" data-panel="question_6" style="display:none;">
+					What size would you like them to be?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
 				</div>
+
+				<div class="question" id="panel_7" data-panel="question_7" style="display:none;">
+ 					How many groom boutonnieres do you need?
+ 					<br>
+					<input type="text" placeholder="Number of Bouquets">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+				<div class="question" id="panel_8" data-panel="question_8" style="display:none;">
+ 					How many groomsmen/ushers/father of the bride/groom boutonnieres do you need?
+ 					<br>
+					<input type="text" placeholder="Number of Bouquets">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+				<div class="question" id="panel_9" data-panel="question_9" style="display:none;">
+ 					How many shoulder corsages do you need?
+ 					<br>
+					<input type="text" placeholder="Number of Bouquets">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>												
+
+
+				<div class="question" id="panel_10" data-panel="question_10" style="display:none;">
+ 					Next up...<br>
+ 					Will you need centerpieces? If so, how many? (We usually calculate this number by taking the total number of guests and dividing by 8 as that is a fairly standard number of people per table, so do this if you are unsure. We can always adjust this number later on.
+ 					<br>
+					<input type="text" placeholder="Number of Bouquets">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>	
+
+
+				<div class="question" id="panel_11" data-panel="question_11" style="display:none;">
+					What size would you like your centerpieces to be?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+						<div class="level-item swatch">Swatch 4</div>
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+				<div class="question" id="panel_12" data-panel="question_12" style="display:none;">
+If you are getting married at any of our partner venues (Roaring Camp in Felton, Paradox Hotel Santa Cruz, the Lexington Ridge Inn Los Gatos, Laughing Canyon in Davenport or Sequoia Retreat Center Ben Lomond) you might be interested our signature centerpiece collections. We have created collections of living centerpieces (available only to clients of the above venues), that are designed to compliment their aesthet- ic. These are available to rent for your big day at very reasonable prices and can definitely help keep your budget in check if that is a concern for you. They are also a great choice if you want to add natural elements to your tables, but do not need these elements to be fully floral as these designs are largely succulent based. Check out the images below to get a sense of each collection.
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+						<div class="level-item swatch">Swatch 4</div>
+					</div>
+					<div class="level">
+						<div class="level-item swatch">Swatch 5</div>
+						<div class="level-item swatch">Swatch 6</div>
+						<div class="level-item swatch">Swatch 7</div>
+						<div class="level-item swatch">Swatch 8</div>
+					</div>			
+					Yes, I am interested in using the signature collection for
+					<div class="level">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+					</div>
+					<div class="level">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+				<div class="question" id="panel_13" data-panel="question_13" style="display:none;">
+					Nearly done!
+					We’ve added a few extras to our menu options because they are always popular. Do you need any of the following?
+					Flower Crowns (adult)
+ 					<br>
+ 					Number needed:
+					<input type="text" placeholder="Number of Bouquets">
+
+					<br>
+					What Style ?
+					<div class="level">
+						<div class="level-item swatch">Delicate</div>
+						<div class="level-item swatch">Full</div>
+					</div>					
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>	
+
+
+				<div class="question" id="panel_14" data-panel="question_14" style="display:none;">
+					Flower Crowns (child)
+ 					<br>
+					<input type="text" placeholder="Number of Bouquets">
+
+					<br>
+					What Style ?
+					<div class="level">
+						<div class="level-item swatch">Delicate</div>
+						<div class="level-item swatch">Full</div>
+					</div>					
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+
+
+				<div class="question" id="panel_15" data-panel="question_15" style="display:none;">
+					Greenery garland (measured in feet at $15 per foot)
+ 					<br>
+					<div class="level">
+						<div class="level-item swatch">Full</div>
+					</div>					
+
+					<br>
+					Number of feet needed
+					<input type="text" placeholder="Number of Bouquets">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+				<div class="question" id="panel_16" data-panel="question_16" style="display:none;">
+We LOVE designing jewelry, so we’ve decided to offer selected items from our range of botanical jewelry to add to your wedding package.
+If this idea appeals to you check out the options below.They can be a lovely and unusual alternative to shoulder corsages, bouquets or
+flowers crowns. Or they make great gifts for members of the wedding party and special guests. Pieces feature succulents, lichens, moss,
+sturdy foliages and fresh/dried flowers. While any fresh blooms or foliages will only last for a day or two, the succulents are resilient little suckers! Spritz with water and they will last weeks. once you get tired of spritzing, or they start to look unhappy you can gently pop them off the bases and try rooting them in damp potting mix. Keep them somewhere with bright but indirect light, away from freezing temps and you’ll have a
+permanent living reminder of your big day.
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+				<div class="question" id="panel_17" data-panel="question_17" style="display:none;">
+					Cuffs:
+
+					We offer these in three sizes and metals.
+
+					Number of cuffs needed
+					<input type="text" placeholder="Number of Bouquets">
+
+					What size would you like them to be?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+
+					What metal would you prefer us to use as the base for the cuffs?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+				<div class="question" id="panel_18" data-panel="question_18" style="display:none;">
+					Pendants:
+					Number of pendants needed
+					<input type="text" placeholder="Number of Bouquets">
+
+					What Shape would you like them to be?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+
+					What metal would you prefer us to use?
+					<div class="level">
+						<div class="level-item swatch">Swatch 1</div>
+						<div class="level-item swatch">Swatch 2</div>
+						<div class="level-item swatch">Swatch 3</div>
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+				<div class="question" id="panel_19" data-panel="question_19" style="display:none;">
+					Earrings:
+					
+					<div class="level">
+						<div class="level-item swatch">Stud</div>
+					</div>
+					<input type="text" placeholder="Number of Pairs Needed">
+					<div class="level">
+						<div class="level-item swatch">Sqauare</div>
+					</div>
+					<input type="text" placeholder="Number of Pairs Needed">
+					<div class="level">
+						<div class="level-item swatch">Rectangle</div>
+					</div>
+					<input type="text" placeholder="Number of Pairs Needed">
+					<div class="level">
+						<div class="level-item swatch">Round</div>
+					</div>
+					<input type="text" placeholder="Number of Pairs Needed">
+
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+				<div class="question" id="panel_20" data-panel="question_20" style="display:none;">
+					Headbands:
+					
+					Styles offered:
+					<div class="level">
+						<div class="level-item swatch">Full</div>
+					</div>
+					<input type="text" placeholder="Number of full bands Needed">
+					<div class="level">
+						<div class="level-item swatch">Metal</div>
+					</div>
+					<input type="text" placeholder="Number of metal bands Needed">
+
+					<div class="level">
+						<label>1</label>
+						<input type="checkbox">
+						<label>1</label>
+						<input type="checkbox">
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+				<div class="question" id="panel_21" data-panel="question_21" style="display:none;">
+					Tiepin:
+					
+					<div class="level">
+						<div class="level-item swatch">Full</div>
+					</div>
+					<input type="text" placeholder="Number of tie pins needed">
+
+					<div class="level">
+						<label>Aluminum</label>
+						<input type="checkbox">
+						<label>Brass</label>
+						<input type="checkbox">
+					</div>
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+				<div class="question" id="panel_22" data-panel="question_22" style="display:none;">
+					Pocket Square
+					
+					<div class="level">
+						<div class="level-item swatch">Placeholder</div>
+					</div>
+					<input type="text" placeholder="Number of pocket squares needed">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+
+
+				<div class="question" id="panel_23" data-panel="question_23" style="display:none;">
+					Bow Tie
+					
+					<div class="level">
+						<div class="level-item swatch">Placeholder</div>
+					</div>
+					<input type="text" placeholder="Number of bow ties needed">
+					<button class="button-back">Back</button>
+					<button class="button-next">Next</button>
+				</div>
+
+				<div class="question" id="panel_24" data-panel="question_24" style="display:none;">
+					youre all done!
+					Thank you for your answers. Based on the information you’ve provided, your total cost for wedding flowers is:
+
+
+					[$7777.777]<br>
+					Note that this total includes tax (charged at 8.5%. It also includes a fee for delivery and set up
+(10% for venues in the santa cruz/los gatos areas and 20% for all other Bay Area locations. You may also opt for farm pickup in which case we waive delivery and set up costs on the understanding that you are then responsible for proper storage and transport of your items once they leave the farm.)
+Not happy with your total? Keep playng with your selections. Any changes you make will be reflected in changes to the total amount shown. When you’re happy with your package simply send it to us by clicking the ‘Send to the Farm’ option.
+or save it to come back to later while you shop around. Once you send us the form we’ll get in touch within 48 hours
+to schedule a phone or in person consultation. This consult is the only in person meeting available as part of this service.
+It can be as brief or as long as you like. Simply put, we feel uncomfortable asking people to pay for a service without first getting a chance to at least touch base in person or over the phone. Wonderful as the interwebs may be,
+there really is no substitute for real human contact. We want you to trust that we will do an amazing job for you,
+and this meeting helps that to happen.
+Once we’ve had this chance to connect and have confirmed we are a good fit, we will send you a link to a completed proposal, confirming the options you selected online, stating our refund policy and other relevant legalese. At this point you will have
+the option to pay in full online and secure your floral package. If you choose to go ahead and pay, then please know that
+no alterations to your package are available after payment is received. After that all you need to do after that is sit back
+and enjoy the run-up to your wedding, while we get busy designing your flowers! If you haven’t decided yet, don’t worry
+we will honor that proposal as long as you contact us within 7 days of receiving it. After that we cannot guarantee our
+availability for your date. We will contact you (or the venue or planner if you prefer) in good time before the event to confirm
+time and delivery location Your flowers will be delivered to the venue specified in the proposal on the day of the wedding.
+Centerpieces will be distributed if needed, bouquets handed over, boutonnieres pinned on and we will leave you to enjoy your special day!
+
+					<button class="button-send">Send To Farm</button>
+					<button class="button-save">Save for later</button>
+					<button class="button-next">Back</button>
+				</div>
+
+
+
 			</div>
 		</div>
 	</div>
@@ -90,7 +471,9 @@
 <div id="modal" class="modal">
   <div id="modal-background" class="modal-background"></div>
   <div class="modal-content">
-    <div id="modal-container" class="box modal-container">Swatch 6</div>
+    <div id="modal-container" class="box modal-container">
+    	
+    </div>
   </div>
   <button class="modal-close is-large" aria-label="close"></button>
 </div>    </div>
