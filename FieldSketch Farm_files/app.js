@@ -12261,7 +12261,14 @@ var maxStage = 1;
 	// console.log(selectedIndex);
 	// selectedIndex = selectedIndex + 2;
 	// console.log(selectedIndex);
-	stage += 1;
+	var _this = (0, _jquery2.default)(this);
+	if (_this.hasClass('button-next')) {
+		stage += 1;
+	} else if (_this.hasClass('button-back')) {
+		stage -= 1;
+	} else {
+		alert('todo');
+	}
 	if (stage > maxStage) {
 		maxStage = stage;
 	}

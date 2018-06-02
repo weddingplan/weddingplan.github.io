@@ -9,26 +9,6 @@ main {
 div.questions {
   justify-content: center; }
 
-button.button-send {
-  position: absolute;
-  bottom: 10vh;
-  right: calc(10vh + 200px); }
-
-button.button-save {
-  position: absolute;
-  bottom: 10vh;
-  right: calc(10vh + 100px); }
-
-button.button-back {
-  position: absolute;
-  bottom: 10vh;
-  right: calc(10vh + 100px); }
-
-button.button-next {
-  position: absolute;
-  bottom: 10vh;
-  right: calc(10vh + 50px); }
-
 div.question {
   justify-content: center; }
 
@@ -43,10 +23,14 @@ div.container {
 span.progress {
   margin: 0;
   padding: 0;
-  height: 0; }
+  height: 0;
+  max-height: 0; }
 
 div.header {
-  margin: 1rem; }
+  padding: 0.25rem;
+  min-height: 7vh;
+  max-height: 7vh;
+  text-align: center; }
 
 .stages {
   font-size: 0;
@@ -90,24 +74,6 @@ input[type="radio"] {
   color: #0cc39f;
   display: inline-block;
   font-size: 16px; }
-
-@media (max-width: 500px) {
-  .stages label {
-    border-width: 2px;
-    width: 20px;
-    height: 20px;
-    line-height: 20px; }
-  .stages label:after {
-    font-size: 12px; } }
-
-@media (min-width: 501px) and (max-width: 800px) {
-  .stages label {
-    border-width: 4px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px; }
-  .stages label:after {
-    font-size: 14px; } }
 
 #radio_1:checked ~ .stages label[for="radio_1"] {
   border-color: #0cc39f; }
@@ -187,264 +153,256 @@ input[type="radio"] {
 #radio_1:checked ~ .stages label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
-  #radio_1:checked ~ .stages label {
-    font-size: 0.8rem; } }
-
-@media (min-width: 501px) and (max-width: 800px) {
-  #radio_1:checked ~ .stages label {
-    font-size: 0.9rem; } }
-
 #radio_2:checked ~ .stages label[for="radio_1"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_2:checked ~ .stages label[for="radio_1"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_2:checked ~ .stages label[for="radio_1"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_3:checked ~ .stages label[for="radio_2"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_3:checked ~ .stages label[for="radio_2"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_3:checked ~ .stages label[for="radio_2"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_4:checked ~ .stages label[for="radio_3"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_4:checked ~ .stages label[for="radio_3"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_4:checked ~ .stages label[for="radio_3"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_5:checked ~ .stages label[for="radio_4"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_5:checked ~ .stages label[for="radio_4"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_5:checked ~ .stages label[for="radio_4"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_6:checked ~ .stages label[for="radio_5"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_6:checked ~ .stages label[for="radio_5"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_6:checked ~ .stages label[for="radio_5"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_7:checked ~ .stages label[for="radio_6"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_7:checked ~ .stages label[for="radio_6"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_7:checked ~ .stages label[for="radio_6"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_8:checked ~ .stages label[for="radio_7"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_8:checked ~ .stages label[for="radio_7"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_8:checked ~ .stages label[for="radio_7"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_9:checked ~ .stages label[for="radio_8"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_9:checked ~ .stages label[for="radio_8"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_9:checked ~ .stages label[for="radio_8"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_10:checked ~ .stages label[for="radio_9"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_10:checked ~ .stages label[for="radio_9"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_10:checked ~ .stages label[for="radio_9"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_11:checked ~ .stages label[for="radio_10"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_11:checked ~ .stages label[for="radio_10"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_11:checked ~ .stages label[for="radio_10"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_12:checked ~ .stages label[for="radio_11"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_12:checked ~ .stages label[for="radio_11"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_12:checked ~ .stages label[for="radio_11"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_13:checked ~ .stages label[for="radio_12"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_13:checked ~ .stages label[for="radio_12"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_13:checked ~ .stages label[for="radio_12"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_14:checked ~ .stages label[for="radio_13"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_14:checked ~ .stages label[for="radio_13"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_14:checked ~ .stages label[for="radio_13"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_15:checked ~ .stages label[for="radio_14"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_15:checked ~ .stages label[for="radio_14"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_15:checked ~ .stages label[for="radio_14"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_16:checked ~ .stages label[for="radio_15"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_16:checked ~ .stages label[for="radio_15"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_16:checked ~ .stages label[for="radio_15"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_17:checked ~ .stages label[for="radio_16"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_17:checked ~ .stages label[for="radio_16"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_17:checked ~ .stages label[for="radio_16"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_18:checked ~ .stages label[for="radio_17"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_18:checked ~ .stages label[for="radio_17"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_18:checked ~ .stages label[for="radio_17"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_19:checked ~ .stages label[for="radio_18"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_19:checked ~ .stages label[for="radio_18"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_19:checked ~ .stages label[for="radio_18"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_20:checked ~ .stages label[for="radio_19"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_20:checked ~ .stages label[for="radio_19"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_20:checked ~ .stages label[for="radio_19"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_21:checked ~ .stages label[for="radio_20"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_21:checked ~ .stages label[for="radio_20"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_21:checked ~ .stages label[for="radio_20"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_22:checked ~ .stages label[for="radio_21"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_22:checked ~ .stages label[for="radio_21"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_22:checked ~ .stages label[for="radio_21"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_23:checked ~ .stages label[for="radio_22"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_23:checked ~ .stages label[for="radio_22"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_23:checked ~ .stages label[for="radio_22"] ~ label {
     font-size: 0.9rem; } }
 
 #radio_24:checked ~ .stages label[for="radio_23"] ~ label {
   font-size: 1rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 523px) {
   #radio_24:checked ~ .stages label[for="radio_23"] ~ label {
     font-size: 0.8rem; } }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 524px) and (max-width: 815px) {
   #radio_24:checked ~ .stages label[for="radio_23"] ~ label {
     font-size: 0.9rem; } }
 
@@ -689,10 +647,6 @@ h4 {
   margin-top: 0; }
 
 div.panel-container {
-  height: 65vh;
-  /* Set your own height: percents, ems, whatever! */
-  width: 50%;
-  /* Set your own width: percents, ems, whatever! */
   overflow: auto;
   /* Recommended in case content is larger than the container */
   margin: auto;
@@ -701,14 +655,9 @@ div.panel-container {
   left: 0;
   bottom: 0;
   right: 0;
-  /* Set the bounds in which to center it, relative to its parent/container */
-  width: 80vw; }
+  /* Set the bounds in which to center it, relative to its parent/container */ }
 
 div.questions {
-  height: 65vh;
-  /* Set your own height: percents, ems, whatever! */
-  width: 50%;
-  /* Set your own width: percents, ems, whatever! */
   overflow: auto;
   /* Recommended in case content is larger than the container */
   margin: auto;
@@ -717,14 +666,11 @@ div.questions {
   left: 0;
   bottom: 0;
   right: 0;
-  /* Set the bounds in which to center it, relative to its parent/container */
-  width: 80vw; }
+  /* Set the bounds in which to center it, relative to its parent/container */ }
 
 div.question {
-  height: 65vh;
+  height: 80vh;
   /* Set your own height: percents, ems, whatever! */
-  width: 50%;
-  /* Set your own width: percents, ems, whatever! */
   overflow: auto;
   /* Recommended in case content is larger than the container */
   margin: auto;
@@ -734,15 +680,14 @@ div.question {
   bottom: 0;
   right: 0;
   /* Set the bounds in which to center it, relative to its parent/container */
-  width: 80vw;
-  align-items: center; }
+  align-items: center;
+  padding: 0.75rem; }
 
 .form {
-  height: 85vh;
+  height: 93vh;
   background: #ffffff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-  margin: 0 2rem 0 2rem;
-  padding: 1rem; }
+  margin: 0;
+  padding: 0.25rem; }
 
 input {
   box-sizing: border-box;
@@ -753,10 +698,70 @@ button {
   border: 0;
   color: #ffffff;
   cursor: pointer;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 1em; }
 
 button:hover {
   opacity: 0.8; }
+
+button.button-send {
+  position: absolute;
+  bottom: 0.25vh;
+  right: calc(0.25vh + 147px); }
+
+button.button-save {
+  position: absolute;
+  bottom: 0.25vh;
+  right: calc(0.25vh + 50px); }
+
+button.button-back {
+  position: absolute;
+  bottom: 0.25vh;
+  right: calc(0.25vh + 50px); }
+
+button.button-next {
+  position: absolute;
+  bottom: 0.25vh;
+  right: calc(0.25vh + 0px); }
+
+@media (max-width: 537px) {
+  div.header {
+    min-height: 8vh;
+    max-height: 8vh; }
+  .form {
+    height: 92vh; }
+  div.question {
+    height: 77vh; } }
+
+@media (max-width: 523px) {
+  body {
+    font-size: 0.8rem; }
+  #radio_1:checked ~ .stages label {
+    font-size: 0.8rem; } }
+
+@media (min-width: 524px) and (max-width: 815px) {
+  body {
+    font-size: 0.9rem; }
+  #radio_1:checked ~ .stages label {
+    font-size: 0.9rem; } }
+
+@media (max-width: 523px) {
+  .stages label {
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px; }
+  .stages label:after {
+    font-size: 12px; } }
+
+@media (min-width: 524px) and (max-width: 815px) {
+  .stages label {
+    border-width: 4px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px; }
+  .stages label:after {
+    font-size: 14px; } }
 
 
 
