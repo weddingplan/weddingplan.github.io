@@ -12264,7 +12264,7 @@ var maxStage = 1;
 	var _this = (0, _jquery2.default)(this);
 	if (_this.hasClass('button-next')) {
 		stage += 1;
-	} else if (_this.hasClass('button-back')) {
+	} else if (_this.hasClass('button-back') || _this.hasClass('button-backend')) {
 		stage -= 1;
 	} else {
 		alert('todo');

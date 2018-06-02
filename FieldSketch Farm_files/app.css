@@ -683,6 +683,9 @@ div.question {
   align-items: center;
   padding: 0.75rem; }
 
+input[type="text"] {
+  width: 95vw; }
+
 .form {
   height: 93vh;
   background: #ffffff;
@@ -719,7 +722,8 @@ button.button-back {
   bottom: 0.25vh;
   right: calc(0.25vh + 50px); }
 
-button.button-next {
+button.button-next,
+button.button-backend {
   position: absolute;
   bottom: 0.25vh;
   right: calc(0.25vh + 0px); }
