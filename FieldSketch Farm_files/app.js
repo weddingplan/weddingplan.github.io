@@ -11956,61 +11956,6 @@ var Timer = function () {
   })();
 });
 
-require.register("phoenix_html/priv/static/phoenix_html.js", function(exports, require, module) {
-  require = __makeRelativeRequire(require, {}, "phoenix_html");
-  (function() {
-    "use strict";
-
-(function() {
-  function buildHiddenInput(name, value) {
-    var input = document.createElement("input");
-    input.type = "hidden";
-    input.name = name;
-    input.value = value;
-    return input;
-  }
-
-  function handleLinkClick(link) {
-    var message = link.getAttribute("data-confirm");
-    if(message && !window.confirm(message)) {
-        return;
-    }
-
-    var to = link.getAttribute("data-to"),
-        method = buildHiddenInput("_method", link.getAttribute("data-method")),
-        csrf = buildHiddenInput("_csrf_token", link.getAttribute("data-csrf")),
-        form = document.createElement("form"),
-        target = link.getAttribute("target");
-
-    form.method = (link.getAttribute("data-method") === "get") ? "get" : "post";
-    form.action = to;
-    form.style.display = "hidden";
-
-    if (target) form.target = target;
-
-    form.appendChild(csrf);
-    form.appendChild(method);
-    document.body.appendChild(form);
-    form.submit();
-  }
-
-  window.addEventListener("click", function(e) {
-    var element = e.target;
-
-    while (element && element.getAttribute) {
-      if(element.getAttribute("data-method")) {
-        handleLinkClick(element);
-        e.preventDefault();
-        return false;
-      } else {
-        element = element.parentNode;
-      }
-    }
-  }, false);
-})();
-  })();
-});
-
 require.register("process/browser.js", function(exports, require, module) {
   require = __makeRelativeRequire(require, {}, "process");
   (function() {
@@ -12203,15 +12148,13 @@ process.umask = function() { return 0; };
 require.register("js/app.js", function(exports, require, module) {
 "use strict";
 
-require("phoenix_html");
-
 var _jquery = require("jquery");
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Brunch automatically concatenates all files in your
+var stage = 1; // Brunch automatically concatenates all files in your
 // watched paths. Those paths can be configured at
 // config.paths.watched in "brunch-config.js".
 //
@@ -12224,7 +12167,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
-var stage = 1;
+// import "phoenix_html"
 
 // Import local files
 //
@@ -12269,7 +12212,6 @@ var maxStage = 1;
 	if (stage > maxStage) {
 		maxStage = stage;
 	}
-	console.log(stage);
 	(0, _jquery2.default)('div.question').hide();
 	(0, _jquery2.default)('div#panel_' + stage).show();
 	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'fiex');
@@ -12295,7 +12237,6 @@ var maxStage = 1;
 	if (stage > maxStage) {
 		maxStage = stage;
 	}
-	console.log('button' + stage);
 	(0, _jquery2.default)("#stage-select").val(stage);
 	// $('.form input[type="radio"]').prop('checked', false);
 	// $('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
@@ -12392,7 +12333,6 @@ exports.default = socket;
 
 require.alias("jquery/dist/jquery.js", "jquery");
 require.alias("phoenix/priv/static/phoenix.js", "phoenix");
-require.alias("phoenix_html/priv/static/phoenix_html.js", "phoenix_html");
 require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
