@@ -12201,11 +12201,11 @@ process.umask = function() { return 0; };
   })();
 });
 require.register("js/app.js", function(exports, require, module) {
-'use strict';
+"use strict";
 
-require('phoenix_html');
+require("phoenix_html");
 
-var _jquery = require('jquery');
+var _jquery = require("jquery");
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -12235,27 +12235,47 @@ var stage = 1;
 
 var maxStage = 1;
 
-(0, _jquery2.default)('.form .stages label').click(function (e) {
-	// var radioButtons = $('.form input:radio');
-	// var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
-	// console.log(selectedIndex);
-	// selectedIndex = selectedIndex + 1;
-	// console.log(selectedIndex);
+// $('.form .stages label').click(function(e) {
+// 	// var radioButtons = $('.form input:radio');
+// 	// var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
+// 	// console.log(selectedIndex);
+// 	// selectedIndex = selectedIndex + 1;
+// 	// console.log(selectedIndex);
 
-	var newStage = (0, _jquery2.default)(this).data('stage');
-	if (newStage > maxStage) {
+// 	let newStage = $(this).data('stage')
+// 	if (newStage > maxStage) {
+// 		e.preventDefault()
+// 		return
+// 	}
+// 	stage = newStage
+// 	$('.form input[type="radio"]').prop('checked', false);
+// 	$('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
+// 	$('div#panel_' + stage).show();
+// 	$('div#panel_' + stage).attr('display', 'fiex');
+
+// });
+
+(0, _jquery2.default)("#stage-select").change(function (e) {
+	var _this = (0, _jquery2.default)(this);
+	var selectedIndex = _this.val();
+	if (selectedIndex > maxStage) {
 		e.preventDefault();
+		_this.val(stage);
+		(0, _jquery2.default)("#modal-container").html("Please complete the previous questions before proceeding to Question # " + selectedIndex);
+		(0, _jquery2.default)("#modal").addClass('is-active');
 		return;
 	}
-	stage = newStage;
-	(0, _jquery2.default)('.form input[type="radio"]').prop('checked', false);
-	(0, _jquery2.default)('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
+	stage = Number(selectedIndex);
+	if (stage > maxStage) {
+		maxStage = stage;
+	}
+	console.log(stage);
 	(0, _jquery2.default)('div.question').hide();
 	(0, _jquery2.default)('div#panel_' + stage).show();
 	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'fiex');
 });
 
-(0, _jquery2.default)('.form button').click(function () {
+(0, _jquery2.default)('.form button').click(function (e) {
 	// var radioButtons = $('.form input:radio');
 	// var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
 	// console.log(selectedIndex);
@@ -12267,13 +12287,18 @@ var maxStage = 1;
 	} else if (_this.hasClass('button-back') || _this.hasClass('button-backend')) {
 		stage -= 1;
 	} else {
-		alert('todo');
+		(0, _jquery2.default)("#modal-container").html("TODO: Email Form / Send To Farm");
+		(0, _jquery2.default)("#modal").addClass('is-active');
+		e.preventDefault();
+		return;
 	}
 	if (stage > maxStage) {
 		maxStage = stage;
 	}
-	(0, _jquery2.default)('.form input[type="radio"]').prop('checked', false);
-	(0, _jquery2.default)('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
+	console.log('button' + stage);
+	(0, _jquery2.default)("#stage-select").val(stage);
+	// $('.form input[type="radio"]').prop('checked', false);
+	// $('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
 	(0, _jquery2.default)('div.question').hide();
 	(0, _jquery2.default)('div#panel_' + stage).show();
 	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'flex');
