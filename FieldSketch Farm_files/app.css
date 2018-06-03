@@ -86,7 +86,8 @@ div.question {
   right: 0;
   /* Set the bounds in which to center it, relative to its parent/container */
   align-items: center;
-  padding: 0.75rem; }
+  padding: 0.75rem;
+  overflow-y: scroll; }
 
 input[type="text"] {
   width: calc(80vw); }
@@ -142,6 +143,22 @@ button.button-backend {
   div.stages,
   body {
     font-size: 0.9rem; } }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
 
 
 
