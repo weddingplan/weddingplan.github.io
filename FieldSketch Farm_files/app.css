@@ -72,7 +72,6 @@ h4 {
 
 div.question {
   margin-top: 2px;
-  margin-bottom: 2px;
   height: calc(100vh - 65px - 1.5rem - 47px - 4px);
   top: 0;
   left: 0;
@@ -115,24 +114,32 @@ button:hover {
 
 button.button-send {
   position: absolute;
-  bottom: 0.25vh;
-  right: calc(0.25vh + 147px); }
+  bottom: 2px;
+  width: 97px;
+  max-width: 97px;
+  right: calc(2px + 150px); }
 
 button.button-save {
   position: absolute;
-  bottom: 0.25vh;
-  right: calc(0.25vh + 50px); }
+  bottom: 2px;
+  width: 97px;
+  max-width: 97px;
+  right: calc(2px + 51px); }
 
 button.button-back {
   position: absolute;
-  bottom: 0.25vh;
-  right: calc(0.25vh + 50px); }
+  bottom: 2px;
+  width: 49px;
+  max-width: 49px;
+  right: calc(2px + 51px); }
 
 button.button-next,
 button.button-backend {
   position: absolute;
-  bottom: 0.25vh;
-  right: calc(0.25vh + 0px); }
+  bottom: 2px;
+  width: 49px;
+  max-width: 49px;
+  right: calc(2px + 0px); }
 
 @media (max-width: 577px) {
   div.stages,
