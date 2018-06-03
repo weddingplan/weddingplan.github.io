@@ -86,7 +86,7 @@ div.question {
   justify-content: center;
   background-color: #fddaf0;
   margin-top: 2px;
-  height: calc(100vh - 65px - 1.5rem - 47px - 4px);
+  height: calc(100vh - 65px - 1.5rem - 11px - 4px);
   top: 0;
   left: 0;
   bottom: 0;
@@ -111,44 +111,39 @@ input {
   box-sizing: border-box;
   display: block; }
 
-button {
-  background-color: #ff7070;
-  border: 0;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: 700;
-  padding: 1em; }
-
-button:hover {
-  opacity: 0.8; }
+div.select-control {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  max-width: calc(100vw - 250px); }
 
 button.button-send {
   position: absolute;
   bottom: 2px;
-  width: 97px;
-  max-width: 97px;
-  right: calc(2px + 150px); }
+  width: 120px;
+  max-width: 120px;
+  right: calc(2px + 184px); }
 
 button.button-save {
   position: absolute;
   bottom: 2px;
-  width: 97px;
-  max-width: 97px;
-  right: calc(2px + 51px); }
+  width: 120px;
+  max-width: 120px;
+  right: calc(2px + 62px); }
 
 button.button-back {
   position: absolute;
   bottom: 2px;
-  width: 49px;
-  max-width: 49px;
-  right: calc(2px + 51px); }
+  width: 60px;
+  max-width: 60px;
+  right: calc(2px + 62px); }
 
 button.button-next,
 button.button-backend {
   position: absolute;
   bottom: 2px;
-  width: 49px;
-  max-width: 49px;
+  width: 60px;
+  max-width: 60px;
   right: calc(2px + 0px); }
 
 @media (max-width: 330px) {
@@ -159,16 +154,12 @@ button.button-backend {
 @media (min-width: 331px) and (max-width: 577px) {
   div.stages,
   body {
-    font-size: 0.8rem; }
-  div.question {
-    height: calc(100vh - 65px - 1.5rem - 40px - 4px); } }
+    font-size: 0.8rem; } }
 
 @media (min-width: 578px) and (max-width: 815px) {
   div.stages,
   body {
-    font-size: 0.9rem; }
-  div.question {
-    height: calc(100vh - 65px - 1.5rem - 43px - 4px); } }
+    font-size: 0.9rem; } }
 
 
 
