@@ -12214,7 +12214,7 @@ var maxStage = 1;
 	}
 	(0, _jquery2.default)('div.question').hide();
 	(0, _jquery2.default)('div#panel_' + stage).show();
-	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'fiex');
+	// $('div#panel_' + stage).attr('display', 'flex');
 });
 
 (0, _jquery2.default)('.form button').click(function (e) {
@@ -12242,7 +12242,7 @@ var maxStage = 1;
 	// $('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
 	(0, _jquery2.default)('div.question').hide();
 	(0, _jquery2.default)('div#panel_' + stage).show();
-	(0, _jquery2.default)('div#panel_' + stage).attr('display', 'flex');
+	// $('div#panel_' + stage).attr('display', 'flex');
 });
 
 (0, _jquery2.default)('div.swatch').click(function () {

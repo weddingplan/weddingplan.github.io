@@ -40,6 +40,9 @@ span.progress {
   max-height: 0; }
 
 div.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.25rem;
   min-height: calc(65px - 0.5rem);
   max-height: calc(65px - 0.5rem);
@@ -71,6 +74,7 @@ h4 {
   margin-top: 0; }
 
 div.question {
+  display: flex;
   margin-top: 2px;
   height: calc(100vh - 65px - 1.5rem - 47px - 4px);
   top: 0;
@@ -84,9 +88,6 @@ div.question {
   border-top: 10px solid #f9daee;
   border-left: 10px solid #f9daee;
   border-bottom: 10px solid #f9daee; }
-
-input[type="text"] {
-  width: calc(80vw); }
 
 .form {
   height: calc(100vh - 65px + 0.5rem);
@@ -141,7 +142,12 @@ button.button-backend {
   max-width: 49px;
   right: calc(2px + 0px); }
 
-@media (max-width: 577px) {
+@media (max-width: 330px) {
+  div.stages,
+  body {
+    font-size: 0.65rem; } }
+
+@media (min-width: 331px) and (max-width: 577px) {
   div.stages,
   body {
     font-size: 0.8rem; }
