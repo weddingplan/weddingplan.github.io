@@ -28,8 +28,8 @@ span.progress {
 
 div.header {
   padding: 0.25rem;
-  min-height: 7vh;
-  max-height: 7vh;
+  min-height: calc(65px - 0.5rem);
+  max-height: calc(65px - 0.5rem);
   text-align: center; }
 
 .stages {
@@ -61,12 +61,7 @@ div.panel-container {
   overflow: auto;
   /* Recommended in case content is larger than the container */
   margin: auto;
-  /* Center the item vertically & horizontally */
-  top: 15vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /* Set the bounds in which to center it, relative to its parent/container */ }
+  /* Center the item vertically & horizontally */ }
 
 div.questions {
   overflow: auto;
@@ -80,8 +75,7 @@ div.questions {
   /* Set the bounds in which to center it, relative to its parent/container */ }
 
 div.question {
-  height: 80vh;
-  /* Set your own height: percents, ems, whatever! */
+  height: calc(100vh - 65px - 1.5rem - 40px);
   overflow: auto;
   /* Recommended in case content is larger than the container */
   margin: auto;
@@ -95,10 +89,10 @@ div.question {
   padding: 0.75rem; }
 
 input[type="text"] {
-  width: 95vw; }
+  width: calc(80vw); }
 
 .form {
-  height: 93vh;
+  height: calc(100vh - 65px + 0.5rem);
   background: #ffffff;
   margin: 0;
   padding: 0.25rem; }
@@ -139,21 +133,12 @@ button.button-backend {
   bottom: 0.25vh;
   right: calc(0.25vh + 0px); }
 
-@media (max-width: 537px) {
-  div.header {
-    min-height: 8vh;
-    max-height: 8vh; }
-  .form {
-    height: 92vh; }
-  div.question {
-    height: 77vh; } }
-
-@media (max-width: 523px) {
+@media (max-width: 577px) {
   div.stages,
   body {
     font-size: 0.8rem; } }
 
-@media (min-width: 524px) and (max-width: 815px) {
+@media (min-width: 578px) and (max-width: 815px) {
   div.stages,
   body {
     font-size: 0.9rem; } }
