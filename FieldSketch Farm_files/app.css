@@ -12,7 +12,7 @@ body {
   body ::-webkit-scrollbar {
     width: 10px; }
   body ::-webkit-scrollbar-track {
-    background: #f2f9da; }
+    background: #f9daf6; }
   body ::-webkit-scrollbar-thumb {
     background: #cd3198; }
   body ::-webkit-scrollbar-thumb:hover {
@@ -70,12 +70,47 @@ div.question {
   align-items: center;
   padding: 0.75rem;
   overflow-y: scroll;
-  border-top: 10px solid #f2f9da;
-  border-left: 10px solid #f2f9da;
-  border-bottom: 10px solid #f2f9da; }
+  border-top: 10px solid #f9daf6;
+  border-left: 10px solid #f9daf6;
+  border-bottom: 10px solid #f9daf6; }
+
+div.select > select#stage-select,
+button.button:hover,
+button.button.is-hovered,
+input.input:hover,
+input.input.is-hovered,
+.textarea:hover,
+.textarea.is-hovered {
+  border-color: #a85bab; }
 
 input[type="text"] {
-  width: calc(45vw); }
+  width: calc(45vw);
+  border-color: #f9daf6;
+  color: #5a0050;
+  box-shadow: inset 0 1px 2px #ffecfd; }
+
+div.select > select#stage-select,
+button.button {
+  background-color: #ffecfa;
+  border-color: #f9daf6;
+  color: #5a0050;
+  text-shadow: -1px -1px 0 #ffecfd; }
+
+input[type="text"].input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ff9ebe; }
+
+input[type="text"].input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ff9ebe; }
+
+input[type="text"].input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ff9ebe; }
+
+input[type="text"].input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ff9ebe; }
 
 .form {
   height: calc(100vh - 65px + 0.5rem);
@@ -91,7 +126,7 @@ input {
 
 div.select-control {
   position: absolute;
-  bottom: 2px;
+  bottom: 3px;
   left: 2px;
   max-width: calc(100vw - 250px); }
 
@@ -122,11 +157,12 @@ button.button-back,
 button.button-next,
 button.button-backend {
   position: absolute;
-  bottom: 2px; }
+  bottom: 3px; }
 
 div > label.label:not(:last-child) {
   margin-bottom: 0;
-  margin-right: 4px; }
+  margin-right: 4px;
+  color: #870a74; }
 
 @media (max-width: 330px) {
   div.stages,
