@@ -80,8 +80,13 @@ img.swatch {
   height: 50px;
   padding: 5px; }
 
+div.question-text {
+  padding-top: 20px;
+  padding-bottom: 11px; }
+
 div.question {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   background-color: #fddaf0;
