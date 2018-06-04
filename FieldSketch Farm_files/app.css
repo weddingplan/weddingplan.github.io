@@ -1,4 +1,5 @@
 body {
+  color: #6a0545;
   background-color: #fffbfe;
   display: flex;
   min-height: 100vh;
@@ -21,7 +22,7 @@ main {
   flex: 1; }
 
 div.modal-container {
-  color: #fff;
+  color: #6a0545;
   justify-content: center;
   text-align: center; }
 
