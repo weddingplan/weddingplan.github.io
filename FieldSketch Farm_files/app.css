@@ -129,27 +129,23 @@ div.select-control {
   position: absolute;
   bottom: 3px;
   left: 2px;
-  max-width: calc(100vw - 250px); }
+  max-width: calc(100vw - 180px); }
 
 button.button-send {
-  width: 120px;
-  max-width: 120px;
-  right: calc(2px + 186px); }
+  width: 70px;
+  max-width: 70px;
+  right: calc(2px + 106px); }
 
-button.button-save {
-  width: 120px;
-  max-width: 120px;
-  right: calc(2px + 63px); }
-
+button.button-save,
 button.button-back {
-  width: 60px;
-  max-width: 60px;
-  right: calc(2px + 63px); }
+  width: 50px;
+  max-width: 50px;
+  right: calc(2px + 53px); }
 
 button.button-next,
 button.button-backend {
-  width: 60px;
-  max-width: 60px;
+  width: 50px;
+  max-width: 50px;
   right: calc(2px + 0px); }
 
 button.button-send,
@@ -167,22 +163,34 @@ div > label.label:not(:last-child) {
 
 @media (max-width: 330px) {
   div.stages,
-  body {
+  div.form {
     font-size: 0.65rem; } }
 
 @media (min-width: 331px) and (max-width: 577px) {
   div.stages,
-  body {
+  div.form {
     font-size: 0.8rem; } }
 
 @media (min-width: 578px) and (max-width: 815px) {
   div.stages,
-  body {
+  div.form {
     font-size: 0.9rem; } }
 
 @media (max-width: 768px) {
   input[type="text"] {
-    width: calc(80vw); } }
+    width: calc(80vw); }
+  span.header-text-large {
+    display: none; }
+  span.header-text-small {
+    display: flex; }
+  div.form {
+    width: 100vw; } }
+
+@media (min-width: 769px) {
+  span.header-text-large {
+    display: flex; }
+  span.header-text-small {
+    display: none; } }
 
 
 
