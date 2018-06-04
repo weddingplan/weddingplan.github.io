@@ -131,7 +131,7 @@ div.select-control {
   position: absolute;
   bottom: 3px;
   left: 2px;
-  max-width: calc(100vw - 180px); }
+  max-width: calc(100vw - 182px); }
 
 button.button-send {
   width: 70px;
