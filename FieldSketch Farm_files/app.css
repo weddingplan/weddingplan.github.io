@@ -20,19 +20,10 @@ body {
 main {
   flex: 1; }
 
-div.questions {
-  justify-content: center; }
-
-div.question {
-  justify-content: center; }
-
 div.modal-container {
-  color: #333;
+  color: #fff;
   justify-content: center;
   text-align: center; }
-
-div.container {
-  justify-content: center; }
 
 span.progress {
   margin: 0;
@@ -49,30 +40,8 @@ div.header {
   max-height: calc(65px - 0.5rem);
   text-align: center; }
 
-.stages {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  width: 100%; }
-
-.progress > span {
-  background: #c0c0c0;
-  display: inline-block;
-  height: 5px;
-  transform: translateY(-2.75em);
-  transition: 0.3s;
-  width: 0; }
-
-/* Custom code for the demo */
-html, body {
-  height: 100%; }
-
 a {
   color: #c30ca7; }
-
-h2,
-h4 {
-  margin-top: 0; }
 
 img.swatch {
   border-width: 1px;
@@ -126,33 +95,33 @@ div.select-control {
   max-width: calc(100vw - 250px); }
 
 button.button-send {
-  position: absolute;
-  bottom: 2px;
   width: 120px;
   max-width: 120px;
   right: calc(2px + 184px); }
 
 button.button-save {
-  position: absolute;
-  bottom: 2px;
   width: 120px;
   max-width: 120px;
   right: calc(2px + 62px); }
 
 button.button-back {
-  position: absolute;
-  bottom: 2px;
   width: 60px;
   max-width: 60px;
   right: calc(2px + 62px); }
 
 button.button-next,
 button.button-backend {
-  position: absolute;
-  bottom: 2px;
   width: 60px;
   max-width: 60px;
   right: calc(2px + 0px); }
+
+button.button-send,
+button.button-save,
+button.button-back,
+button.button-next,
+button.button-backend {
+  position: absolute;
+  bottom: 2px; }
 
 div > label.label:not(:last-child) {
   margin-bottom: 0;
