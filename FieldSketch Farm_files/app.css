@@ -164,17 +164,17 @@ div > label.label:not(:last-child) {
 @media (max-width: 330px) {
   div.stages,
   div.form {
-    font-size: 0.65rem; } }
+    font-size: 0.8rem; } }
 
 @media (min-width: 331px) and (max-width: 577px) {
   div.stages,
   div.form {
-    font-size: 0.8rem; } }
+    font-size: 0.87rem; } }
 
 @media (min-width: 578px) and (max-width: 815px) {
   div.stages,
   div.form {
-    font-size: 0.9rem; } }
+    font-size: 0.94rem; } }
 
 @media (max-width: 768px) {
   input[type="text"] {
