@@ -59,7 +59,7 @@ div.question {
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #fddaf0;
+  background-color: #fff0fa;
   margin-top: 2px;
   height: calc(100vh - 65px - 1.5rem - 11px - 4px);
   top: 0;
