@@ -61,7 +61,7 @@ div.question {
   justify-content: center;
   background-color: #fff0fa;
   margin-top: 2px;
-  height: calc(100vh - 65px - 1.5rem - 11px - 4px);
+  height: calc(100vh - 64px - 1.5rem - 11px - 4px);
   top: 0;
   left: 0;
   bottom: 0;
@@ -70,6 +70,7 @@ div.question {
   align-items: center;
   padding: 0.75rem;
   overflow-y: scroll;
+  border-radius: 5px;
   border-top: 10px solid #f9daf6;
   border-left: 10px solid #f9daf6;
   border-bottom: 10px solid #f9daf6; }
@@ -113,7 +114,7 @@ input[type="text"].input:-moz-placeholder {
   color: #ff9ebe; }
 
 .form {
-  height: calc(100vh - 65px + 0.5rem);
+  height: calc(100vh - 64px + 0.5rem);
   margin: 0;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -133,17 +134,17 @@ div.select-control {
 button.button-send {
   width: 120px;
   max-width: 120px;
-  right: calc(2px + 184px); }
+  right: calc(2px + 186px); }
 
 button.button-save {
   width: 120px;
   max-width: 120px;
-  right: calc(2px + 62px); }
+  right: calc(2px + 63px); }
 
 button.button-back {
   width: 60px;
   max-width: 60px;
-  right: calc(2px + 62px); }
+  right: calc(2px + 63px); }
 
 button.button-next,
 button.button-backend {
