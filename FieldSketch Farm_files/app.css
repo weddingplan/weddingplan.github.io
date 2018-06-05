@@ -165,7 +165,7 @@ div.select-control {
   position: absolute;
   bottom: 3px;
   left: 2px;
-  max-width: calc(100vw - 182px); }
+  max-width: calc(100vw - 183px); }
 
 button.button-send {
   width: 70px;
@@ -214,7 +214,7 @@ div > label.label:not(:last-child) {
 
 @media (max-width: 768px) {
   select.select {
-    width: 50px; }
+    width: 80vw; }
   input[type="text"] {
     width: calc(80vw); }
   span.header-text-large {
