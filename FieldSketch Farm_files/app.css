@@ -51,8 +51,9 @@ img.swatch {
   margin: 5px; }
 
 div#modal-container > img.swatch {
-  width: 500px;
-  height: auto; }
+  width: 400px;
+  height: 400px;
+  align-items: center; }
 
 div.question-text {
   padding-top: 20px;
