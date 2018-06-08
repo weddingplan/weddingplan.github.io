@@ -50,10 +50,15 @@ img.swatch {
   padding: 0px;
   margin: 5px; }
 
+div.box {
+  margin: 0;
+  padding: 0.25rem; }
+
 div#modal-container > img.swatch {
   width: 400px;
   height: 400px;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 0; }
 
 div.question-text {
   padding-top: 20px;
