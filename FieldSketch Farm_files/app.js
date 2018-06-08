@@ -12246,7 +12246,10 @@ var maxStage = 1;
 });
 
 (0, _jquery2.default)('div.swatch').click(function () {
-	var data = (0, _jquery2.default)(this).html();
+	var _this = (0, _jquery2.default)(this);
+	var data = _this.html();
+	(0, _jquery2.default)("img.swatch").addClass('non-selected-image');
+	_this.children('img.swatch').removeClass('non-selected-image').addClass('selected-image');
 	(0, _jquery2.default)("#modal-container").html(data);
 	(0, _jquery2.default)("#modal").addClass('is-active');
 });
