@@ -12213,6 +12213,7 @@ var maxStage = 1;
 		maxStage = stage;
 	}
 	(0, _jquery2.default)('div.question').hide();
+	(0, _jquery2.default)("img.swatch").removeClass('non-selected-image').removeClass('selected-image');
 	(0, _jquery2.default)('div#panel_' + stage).show();
 	// $('div#panel_' + stage).attr('display', 'flex');
 });
@@ -12241,6 +12242,7 @@ var maxStage = 1;
 	// $('.form input[type="radio"]').prop('checked', false);
 	// $('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
 	(0, _jquery2.default)('div.question').hide();
+	(0, _jquery2.default)("img.swatch").removeClass('non-selected-image').removeClass('selected-image');
 	(0, _jquery2.default)('div#panel_' + stage).show();
 	// $('div#panel_' + stage).attr('display', 'flex');
 });
