@@ -12146,9 +12146,9 @@ process.umask = function() { return 0; };
   })();
 });
 require.register("js/app.js", function(exports, require, module) {
-"use strict";
+'use strict';
 
-var _jquery = require("jquery");
+var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -12198,6 +12198,19 @@ var maxStage = 1;
 
 // });
 
+function reset_all_images() {
+	(0, _jquery2.default)("img.swatch").removeClass('non-selected-image').removeClass('selected-image');
+}
+
+function show_stage() {
+	if (stage > maxStage) {
+		maxStage = stage;
+	}
+	(0, _jquery2.default)('div.question').hide();
+	reset_all_images();
+	(0, _jquery2.default)('div#panel_' + stage).show();
+}
+
 (0, _jquery2.default)("#stage-select").change(function (e) {
 	var _this = (0, _jquery2.default)(this);
 	var selectedIndex = _this.val();
@@ -12209,21 +12222,10 @@ var maxStage = 1;
 		return;
 	}
 	stage = Number(selectedIndex);
-	if (stage > maxStage) {
-		maxStage = stage;
-	}
-	(0, _jquery2.default)('div.question').hide();
-	(0, _jquery2.default)("img.swatch").removeClass('non-selected-image').removeClass('selected-image');
-	(0, _jquery2.default)('div#panel_' + stage).show();
-	// $('div#panel_' + stage).attr('display', 'flex');
+	show_stage();
 });
 
 (0, _jquery2.default)('.form button').click(function (e) {
-	// var radioButtons = $('.form input:radio');
-	// var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
-	// console.log(selectedIndex);
-	// selectedIndex = selectedIndex + 2;
-	// console.log(selectedIndex);
 	var _this = (0, _jquery2.default)(this);
 	if (_this.hasClass('button-next')) {
 		stage += 1;
@@ -12235,16 +12237,8 @@ var maxStage = 1;
 		e.preventDefault();
 		return;
 	}
-	if (stage > maxStage) {
-		maxStage = stage;
-	}
 	(0, _jquery2.default)("#stage-select").val(stage);
-	// $('.form input[type="radio"]').prop('checked', false);
-	// $('.form input[type="radio"]:nth-of-type(' + stage + ')').prop('checked', true);
-	(0, _jquery2.default)('div.question').hide();
-	(0, _jquery2.default)("img.swatch").removeClass('non-selected-image').removeClass('selected-image');
-	(0, _jquery2.default)('div#panel_' + stage).show();
-	// $('div#panel_' + stage).attr('display', 'flex');
+	show_stage();
 });
 
 (0, _jquery2.default)('div.swatch').click(function () {
