@@ -12241,6 +12241,10 @@ function show_stage() {
 	show_stage();
 });
 
+(0, _jquery2.default)('button.modal-close').click(function () {
+	(0, _jquery2.default)("#modal").removeClass('is-active');
+});
+
 (0, _jquery2.default)('div.swatch').click(function () {
 	var _this = (0, _jquery2.default)(this);
 	var data = _this.html();
