@@ -12744,6 +12744,7 @@ function show_stage() {
 	var data = _this.html();
 	(0, _jquery2.default)("img.swatch").addClass('non-selected-image');
 	_this.children('img.swatch').removeClass('non-selected-image').addClass('selected-image');
+	data += '<div class="modal_text">Lorem Ipdescription Goes Here<br>MultiLine Is Fine&nbsp;<button class="button">CHOOSE</button>';
 	(0, _jquery2.default)("#modal-container").html(data);
 	(0, _jquery2.default)("#modal-container").children('img').removeClass('non-selected-image').addClass('selected-image');
 	(0, _jquery2.default)("#modal").addClass('is-active');
