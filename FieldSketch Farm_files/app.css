@@ -100,7 +100,7 @@ input.question-range-input {
 input.question-range-number-input {
   width: 15%; }
 
-span#running-total {
+span.running-total {
   color: red;
   padding-left: 5px; }
 
