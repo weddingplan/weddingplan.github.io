@@ -1,7 +1,5 @@
 html, body {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%); }
+  position: fixed; }
 
 body {
   color: #456a05;
@@ -96,8 +94,15 @@ div.question {
   border-left: 10px solid #e6f9da;
   border-bottom: 10px solid #e6f9da; }
 
-select.question-select {
-  width: 20vw; }
+input.question-range-input {
+  width: 85%; }
+
+input.question-range-number-input {
+  width: 15%; }
+
+span#running-total {
+  color: red;
+  padding-left: 5px; }
 
 select.question-select:hover,
 select.select.is-hovered,
@@ -111,8 +116,9 @@ input.input.is-hovered,
 .textarea.is-hovered {
   border-color: #5bab72; }
 
-input[type="text"] {
-  width: calc(45vw);
+input[type="text"],
+input[type="range"],
+input[type="number"] {
   border-color: #e6f9da;
   color: #00395a;
   box-shadow: inset 0 1px 2px #efffec; }
@@ -127,22 +133,30 @@ button.button {
   text-shadow: -1px -1px 0 #efffec; }
 
 select.question-select::-webkit-input-placeholder,
-input[type="text"].input::-webkit-input-placeholder {
+input[type="text"].input::-webkit-input-placeholder,
+input[type="range"].input::-webkit-input-placeholder,
+input[type="number"].input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #9efeff; }
 
 select.question-select::-moz-placeholder,
-input[type="text"].input::-moz-placeholder {
+input[type="text"].input::-moz-placeholder,
+input[type="range"].input::-moz-placeholder,
+input[type="number"].input::-moz-placeholder {
   /* Firefox 19+ */
   color: #9efeff; }
 
 select.question-select:-ms-input-placeholder,
-input[type="text"].input:-ms-input-placeholder {
+input[type="text"].input:-ms-input-placeholder,
+input[type="range"].input:-ms-input-placeholder,
+input[type="number"].input:-ms-input-placeholder {
   /* IE 10+ */
   color: #9efeff; }
 
 select.question-select:-moz-placeholder,
-input[type="text"].input:-moz-placeholder {
+input[type="text"].input:-moz-placeholder,
+input[type="range"].input:-moz-placeholder,
+input[type="number"].input:-moz-placeholder {
   /* Firefox 18- */
   color: #9efeff; }
 
@@ -210,10 +224,6 @@ div > label.label:not(:last-child) {
     font-size: 0.93rem; } }
 
 @media (max-width: 768px) {
-  select.question-select {
-    width: 80vw; }
-  input[type="text"] {
-    width: calc(80vw); }
   span.header-text-large {
     display: none; }
   span.header-text-small {
