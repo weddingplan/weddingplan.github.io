@@ -12679,6 +12679,17 @@ var maxStage = 1;
 
 // });
 
+(0, _jquery2.default)("body").on('change', 'input[type=range]', function () {
+	// alert('ok');
+	var _this = (0, _jquery2.default)(this);
+	_this.parents().children('input[type=number]').first().val(_this.val());
+});
+(0, _jquery2.default)("body").on('input', 'input[type=range]', function () {
+	// alert('ok');
+	var _this = (0, _jquery2.default)(this);
+	_this.parents().children('input[type=number]').first().val(_this.val());
+});
+
 function reset_all_images() {
 	(0, _jquery2.default)("img.swatch").removeClass('non-selected-image').removeClass('selected-image');
 }
