@@ -1,3 +1,8 @@
+html, body {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%); }
+
 body {
   color: #456a05;
   background-color: #fefffb;
