@@ -384,6 +384,16 @@ a.round {
   span.header-text-small {
     display: none; } }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  img.swatch {
+    width: 225px;
+    height: 225px; } }
+
+@media (min-width: 1025px) {
+  img.swatch {
+    width: 275px;
+    height: 275px; } }
+
 
 
 /*# sourceMappingURL=app.css.map*/
