@@ -69,15 +69,8 @@ div#modal-container > img.swatch {
   align-items: center;
   margin-bottom: 0; }
 
-div.question-text {
-  padding-top: 20px;
-  padding-bottom: 11px; }
-
 div.question {
-  display: flex;
   text-align: center;
-  flex-direction: column;
-  justify-content: center;
   background-color: #f8fbff;
   margin-top: 2px;
   height: calc(100vh - 64px - 1.5rem - 11px - 4px);
@@ -94,11 +87,9 @@ div.question {
   border-left: 10px solid #e6f9da;
   border-bottom: 10px solid #e6f9da; }
 
-input.question-range-input {
-  width: 85%; }
-
 input.question-range-number-input {
-  width: 15%; }
+  min-width: 40px;
+  max-width: 40px; }
 
 span.running-total {
   color: red;
