@@ -91,10 +91,6 @@ input.question-range-number-input {
   min-width: 40px;
   max-width: 40px; }
 
-span.running-total {
-  color: red;
-  padding-left: 5px; }
-
 input[type=number] {
   font-size: 1rem; }
 
@@ -256,6 +252,17 @@ div.select-control {
   bottom: 3px;
   left: 2px;
   max-width: calc(100vw - 183px); }
+
+div#running-total-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 10px; }
+
+div#running-total {
+  text-align: center;
+  display: inline-block;
+  color: red; }
 
 button.button-send {
   width: 70px;

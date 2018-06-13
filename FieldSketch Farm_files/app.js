@@ -12747,7 +12747,7 @@ function reset_all_images() {
 
 function show_stage() {
 	var random = Math.floor(Math.random() * 1000000 + 1) / 100;
-	(0, _jquery2.default)("span.running-total").html("Total: $" + random);
+	(0, _jquery2.default)("div#running-total").html("Total: $" + random);
 	if (stage > maxStage) {
 		maxStage = stage;
 	}
