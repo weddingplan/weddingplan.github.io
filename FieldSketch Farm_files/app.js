@@ -12803,6 +12803,8 @@ function show_stage() {
 	(0, _jquery2.default)("img.swatch").addClass('non-selected-image');
 	_this.children('img.swatch').removeClass('non-selected-image').addClass('selected-image');
 	data += '<div class="modal_text">Lorem Ipdescription Goes Here<br>MultiLine Is Fine&nbsp;<button class="button">CHOOSE</button>';
+	data += '<a href="#" class="modal-nav previous round">&#8249;</a>';
+	data += '<a href="#" class="modal-nav next round">&#8250;</a>';
 	(0, _jquery2.default)("#modal-container").html(data);
 	(0, _jquery2.default)("#modal-container").children('img').removeClass('non-selected-image').addClass('selected-image');
 	(0, _jquery2.default)("#modal").addClass('is-active');
