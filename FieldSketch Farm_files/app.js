@@ -12709,6 +12709,7 @@ require('viewport-units-buggyfill').init();
 var stage = 1;
 
 var maxStage = 1;
+var lastStage = 24;
 
 // $('.form .stages label').click(function(e) {
 // 	// var radioButtons = $('.form input:radio');
@@ -12747,7 +12748,11 @@ function reset_all_images() {
 
 function show_stage() {
 	var random = Math.floor(Math.random() * 1000000 + 1) / 100;
-	(0, _jquery2.default)("div#running-total").html("Total: $" + random);
+	if (stage == lastStage) {
+		(0, _jquery2.default)("div#running-total").html("");
+	} else {
+		(0, _jquery2.default)("div#running-total").html("Total: $" + random);
+	}
 	if (stage > maxStage) {
 		maxStage = stage;
 	}
