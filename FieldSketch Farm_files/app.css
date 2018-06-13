@@ -88,8 +88,8 @@ div.question {
   border-bottom: 10px solid #e6f9da; }
 
 input.question-range-number-input {
-  min-width: 40px;
-  max-width: 40px; }
+  min-width: 50px;
+  max-width: 50px; }
 
 input[type=number] {
   font-size: 1rem; }
