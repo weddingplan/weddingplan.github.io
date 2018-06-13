@@ -12710,6 +12710,8 @@ var stage = 1;
 
 var maxStage = 1;
 var lastStage = 24;
+var currentImage = 0;
+var currentImages = [];
 
 // $('.form .stages label').click(function(e) {
 // 	// var radioButtons = $('.form input:radio');
@@ -12799,15 +12801,64 @@ function show_stage() {
 
 (0, _jquery2.default)('div.swatch').click(function () {
 	var _this = (0, _jquery2.default)(this);
+	currentImages = _this.parent().parent().find('div.swatch');
+	currentImage = 0;
+	for (var i = 0; i < currentImages.length; i++) {
+		if (this === currentImages[i]) {
+			// alert(i);
+			currentImage = i;
+			break;
+		}
+	}
+	setImageInModal(_this);
+	(0, _jquery2.default)("#modal").addClass('is-active');
+});
+
+function setImageInModal(_this) {
 	var data = _this.html();
+	// console.log(currentImages);
 	(0, _jquery2.default)("img.swatch").addClass('non-selected-image');
 	_this.children('img.swatch').removeClass('non-selected-image').addClass('selected-image');
-	data += '<div class="modal_text">Lorem Ipdescription Goes Here<br>MultiLine Is Fine&nbsp;<button class="button">CHOOSE</button>';
+	data += '<div class="modal_text">Description for Item #: ';
+	data += 1 + currentImage;
+	data += '<br>';
+	// data += 'DifferentText: ';
+	// data += Math.floor((Math.random() * 1000000) + 1) / 100;
+	// data += '<br>';
+	data += 'MultiLine Is Fine<br><button class="choose button">CHOOSE # ' + (1 + currentImage) + '</button>';
 	data += '<a href="#" class="modal-nav previous round">&#8249;</a>';
 	data += '<a href="#" class="modal-nav next round">&#8250;</a>';
 	(0, _jquery2.default)("#modal-container").html(data);
 	(0, _jquery2.default)("#modal-container").children('img').removeClass('non-selected-image').addClass('selected-image');
-	(0, _jquery2.default)("#modal").addClass('is-active');
+}
+
+(0, _jquery2.default)('#modal-container').on('click', 'a.next', function (e) {
+	// console.log(currentImages, currentImages.length);
+	if (currentImages.length < 2) {
+		e.preventDefault();
+		return;
+	}
+	currentImage += 1;
+	if (currentImage >= currentImages.length) {
+		currentImage = 0;
+	}
+	setImageInModal((0, _jquery2.default)(currentImages[currentImage]));
+});
+
+(0, _jquery2.default)('#modal-container').on('click', 'a.previous', function (e) {
+	if (currentImages.length < 2) {
+		e.preventDefault();
+		return;
+	}
+	currentImage -= 1;
+	if (currentImage < 0) {
+		currentImage = currentImages.length - 1;
+	}
+	setImageInModal((0, _jquery2.default)(currentImages[currentImage]));
+});
+
+(0, _jquery2.default)('#modal-container').on('click', 'button.choose', function (e) {
+	(0, _jquery2.default)("#modal").removeClass('is-active');
 });
 
 (0, _jquery2.default)('#modal-background').click(function () {
